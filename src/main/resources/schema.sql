@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS RATE (
+    id SERIAL PRIMARY KEY,
+    base_currency VARCHAR(5),
+    rates JSONB NOT NULL,
+    rate_date DATE NOT NULL,
+    rate_timestamp TIMESTAMP WITH TIME ZONE NOT NULL
+);
